@@ -1,10 +1,10 @@
 font-face {
-    font-family: 'Noto Serif Bengali';
-    src: url('../fonts/NotoSerifBengali-Regular.ttf') format('truetype');
+    font-family: 'Shurjo';
+    src: url('../fonts/shurjo.woff2') format('woff2');
 }
 
 body {
-    font-family: 'Open Sans', 'Noto Serif Bengali', sans-serif;
+    font-family: 'Shurjo', 'Open Sans', sans-serif;
 }
 
 p {
