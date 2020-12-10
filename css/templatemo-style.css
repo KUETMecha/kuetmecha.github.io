@@ -1,10 +1,10 @@
-font-face {
+@font-face {
     font-family: 'Shurjo';
-    src: url('../fonts/shurjo.woff2') format('woff2');
+    src: local('Shurjo'), url('../fonts/shurjo.woff2') format('woff2');
 }
 
 body {
-    font-family: 'Shurjo', 'Open Sans', sans-serif;
+    font-family: 'Open Sans', 'Shurjo', sans-serif;
 }
 
 p {
@@ -527,7 +527,8 @@ nav .active-section span {
 
 .slick-slide {
     display: none;
-    float: left/* If RTL Make This Right */
+    float: left
+    /* If RTL Make This Right */
     ;
     height: 100%;
     min-height: 1px
