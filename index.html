@@ -33,13 +33,13 @@
         <div id="main-nav" class="collapse navbar-collapse">
             <nav>
                 <ul class="nav navbar-nav">
-                    <li><a href="#top">চোথার রাজ্য এখানেই</a></li>
-                    <li><a href="#sec1">প্রবাহী বলবিজ্ঞান ২ – Fluid mechanics II</a></li>
-                    <li><a href="#sec2">প্রকৌশল বলবিজ্ঞান ২ – Engineering mechanics II </a></li>
-                    <li><a href="#sec3">নিরেট বস্তুর বলবিজ্ঞান – Mechanics of Solid</a></li>
-                    <li><a href="#sec4">গণিত ৪ – Mathematics IV</a></li>
-                    <li><a href="#sec5">গণনাযন্ত্রের ক্রমলেখনী – Computer Programming</a></li>
-                    <li><a href="#sec6">অ্যাসাইনমেন্ট</a></li>
+                    <li><a href="#top" data-toggle="collapse" data-target=".in">চোথার রাজ্য এখানেই</a></li>
+                    <li><a href="#sec1" data-toggle="collapse" data-target=".in">প্রবাহী বলবিজ্ঞান ২ – Fluid mechanics II</a></li>
+                    <li><a href="#sec2" data-toggle="collapse" data-target=".in">প্রকৌশল বলবিজ্ঞান ২ – Engineering mechanics II </a></li>
+                    <li><a href="#sec3" data-toggle="collapse" data-target=".in">নিরেট বস্তুর বলবিজ্ঞান – Mechanics of Solid</a></li>
+                    <li><a href="#sec4" data-toggle="collapse" data-target=".in">গণিত ৪ – Mathematics IV</a></li>
+                    <li><a href="#sec5" data-toggle="collapse" data-target=".in">গণনাযন্ত্রের ক্রমলেখনী – Computer Programming</a></li>
+                    <li><a href="#sec6" data-toggle="collapse" data-target=".in">অ্যাসাইনমেন্ট</a></li>
                 </ul>
             </nav>
         </div>
@@ -768,6 +768,11 @@
 
             lastScrollTop = st;
         }
+        $(document).ready(function() {
+            $("nav").find("li").on("click", "a", function() {
+                $('.navbar-collapse.in').collapse('hide');
+            });
+        });
     </script>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
