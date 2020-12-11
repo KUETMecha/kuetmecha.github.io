@@ -1720,6 +1720,70 @@ nav .active-section span {
         padding-left: 15px;
         padding-right: 15px;
     }
+    #sec1 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #sec1 .tabs a {
+        font-size: 13px;
+    }
+    #sec1 .tabgroup ul li img {
+        float: none;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    #sec1 .tabgroup ul li .text-content {
+        display: block;
+    }
+    #contact-content {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #sec1 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #sec1 .tabs a {
+        font-size: 13px;
+    }
+    #sec1 .tabgroup ul li img {
+        float: none;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    #sec1 .tabgroup ul li .text-content {
+        display: block;
+    }
+    #sec2 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #sec2 .tabs a {
+        font-size: 13px;
+    }
+    #sec2 .tabgroup ul li img {
+        float: none;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    #sec2 .tabgroup ul li .text-content {
+        display: block;
+    }
+    #sec3 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #sec3 .tabs a {
+        font-size: 13px;
+    }
+    #sec3 .tabgroup ul li img {
+        float: none;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    #sec3 .tabgroup ul li .text-content {
+        display: block;
+    }
     #sec4 {
         padding-left: 15px;
         padding-right: 15px;
@@ -1727,12 +1791,42 @@ nav .active-section span {
     #sec4 .tabs a {
         font-size: 13px;
     }
-    #sec4 .tabgroup ul li img {
+    #sec14 .tabgroup ul li img {
         float: none;
         width: 100%;
         margin-bottom: 15px;
     }
     #sec4 .tabgroup ul li .text-content {
+        display: block;
+    }
+    #sec5 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #sec5 .tabs a {
+        font-size: 13px;
+    }
+    #sec5 .tabgroup ul li img {
+        float: none;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    #sec5 .tabgroup ul li .text-content {
+        display: block;
+    }
+    #sec6 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #sec6 .tabs a {
+        font-size: 13px;
+    }
+    #sec6 .tabgroup ul li img {
+        float: none;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    #sec6 .tabgroup ul li .text-content {
         display: block;
     }
     #contact-content {
