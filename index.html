@@ -29,7 +29,7 @@
 </head>
 
 <body>
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-double-up"></i>&nbsp;Top</button>
+    <a id="button"></a>
     <header class="nav-down responsive-nav hidden-lg hidden-md">
         <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
                 <b>সূচিপত্র<br><i class="fas fa-angle-double-down"></i></b>
@@ -791,27 +791,25 @@
                 lastScrollTop = st;
             }
             */
-            //Get the button
-            var mybutton = document.getElementById("myBtn");
+            var btn = $('#button');
 
-            // When the user scrolls down 20px from the top of the document, show the button
-            window.onscroll = function() {
-                scrollFunction()
-            };
-
-            function scrollFunction() {
-                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                    mybutton.style.display = "block";
+            $(window).scroll(function() {
+                if ($(window).scrollTop() > 300) {
+                    btn.addClass('show');
                 } else {
-                    mybutton.style.display = "none";
+                    btn.removeClass('show');
                 }
-            }
+            });
 
-            // When the user clicks on the button, scroll to the top of the document
-            function topFunction() {
-                document.body.scrollTop = 0;
-                document.documentElement.scrollTop = 0;
-            }
+            btn.on('click', function(e) {
+                e.preventDefault();
+                $('html, body').animate({
+                    scrollTop: 0
+                }, '300');
+            });
+
+
+            // collapse
             $(document).ready(function() {
                 $("nav").find("li").on("click", "a", function() {
                     $('.navbar-collapse.in').collapse('hide');
