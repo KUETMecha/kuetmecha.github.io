@@ -2,7 +2,21 @@
     font-family: 'Shurjo';
     src: local('Shurjo'), url('../fonts/shurjo.woff2') format('woff2');
 }
-
+.grad_ani {
+    text-align: center;
+    text-decoration: none;
+    line-height: 0.2;
+     -webkit-animation: changeColor 80s ease-in infinite;
+     animation: changeColor 5s ease-in infinite;
+  }
+  @-webkit-keyframes changeColor {
+    0% {color: #ff0000;}
+    20% {color: #ffc600;}
+    40% {color: #36ff00;}
+    60% {color: #00c0ff;}
+    80% {color: #d800ff;}
+    100% {color: #ff0000;}
+  }
 body {
     font-family: 'Open Sans', 'Shurjo', sans-serif;
 }
